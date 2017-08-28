@@ -1,0 +1,126 @@
+Classfile /C:/Users/RENT/IdeaProjects/hello/out/production/hello/Main.class
+  Last modified 2017-08-18; size 798 bytes
+  MD5 checksum 3a7340bedab1486bb8ff0a340372598b
+  Compiled from "Main.java"
+public class Main
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+   #1 = Methodref          #11.#33        // java/lang/Object."<init>":()V
+   #2 = String             #34            // Ala
+   #3 = String             #35            // Inny napis
+   #4 = Fieldref           #36.#37        // java/lang/System.out:Ljava/io/PrintStream;
+   #5 = Methodref          #38.#39        // java/io/PrintStream.println:()V
+   #6 = Methodref          #38.#40        // java/io/PrintStream.println:(I)V
+   #7 = Long               5000l
+   #9 = Methodref          #41.#42        // java/lang/Thread.sleep:(J)V
+  #10 = Class              #43            // Main
+  #11 = Class              #44            // java/lang/Object
+  #12 = Utf8               <init>
+  #13 = Utf8               ()V
+  #14 = Utf8               Code
+  #15 = Utf8               LineNumberTable
+  #16 = Utf8               LocalVariableTable
+  #17 = Utf8               this
+  #18 = Utf8               LMain;
+  #19 = Utf8               main
+  #20 = Utf8               ([Ljava/lang/String;)V
+  #21 = Utf8               i
+  #22 = Utf8               I
+  #23 = Utf8               args
+  #24 = Utf8               [Ljava/lang/String;
+  #25 = Utf8               imie
+  #26 = Utf8               Ljava/lang/String;
+  #27 = Utf8               StackMapTable
+  #28 = Class              #45            // java/lang/String
+  #29 = Utf8               Exceptions
+  #30 = Class              #46            // java/lang/InterruptedException
+  #31 = Utf8               SourceFile
+  #32 = Utf8               Main.java
+  #33 = NameAndType        #12:#13        // "<init>":()V
+  #34 = Utf8               Ala
+  #35 = Utf8               Inny napis
+  #36 = Class              #47            // java/lang/System
+  #37 = NameAndType        #48:#49        // out:Ljava/io/PrintStream;
+  #38 = Class              #50            // java/io/PrintStream
+  #39 = NameAndType        #51:#13        // println:()V
+  #40 = NameAndType        #51:#52        // println:(I)V
+  #41 = Class              #53            // java/lang/Thread
+  #42 = NameAndType        #54:#55        // sleep:(J)V
+  #43 = Utf8               Main
+  #44 = Utf8               java/lang/Object
+  #45 = Utf8               java/lang/String
+  #46 = Utf8               java/lang/InterruptedException
+  #47 = Utf8               java/lang/System
+  #48 = Utf8               out
+  #49 = Utf8               Ljava/io/PrintStream;
+  #50 = Utf8               java/io/PrintStream
+  #51 = Utf8               println
+  #52 = Utf8               (I)V
+  #53 = Utf8               java/lang/Thread
+  #54 = Utf8               sleep
+  #55 = Utf8               (J)V
+{
+  public Main();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 4: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   LMain;
+
+  public static void main(java.lang.String[]) throws java.lang.InterruptedException;
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=3, args_size=1
+         0: ldc           #2                  // String Ala
+         2: astore_1
+         3: ldc           #3                  // String Inny napis
+         5: astore_1
+         6: getstatic     #4                  // Field java/lang/System.out:Ljava/io/PrintStream;
+         9: invokevirtual #5                  // Method java/io/PrintStream.println:()V
+        12: iconst_0
+        13: istore_2
+        14: iload_2
+        15: bipush        10
+        17: if_icmpge     39
+        20: getstatic     #4                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        23: iload_2
+        24: invokevirtual #6                  // Method java/io/PrintStream.println:(I)V
+        27: ldc2_w        #7                  // long 5000l
+        30: invokestatic  #9                  // Method java/lang/Thread.sleep:(J)V
+        33: iinc          2, 1
+        36: goto          14
+        39: return
+      LineNumberTable:
+        line 7: 0
+        line 9: 3
+        line 10: 6
+        line 12: 12
+        line 13: 20
+        line 14: 27
+        line 12: 33
+        line 17: 39
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           14      25     2     i   I
+            0      40     0  args   [Ljava/lang/String;
+            3      37     1  imie   Ljava/lang/String;
+      StackMapTable: number_of_entries = 2
+        frame_type = 253 /* append */
+          offset_delta = 14
+          locals = [ class java/lang/String, int ]
+        frame_type = 250 /* chop */
+          offset_delta = 24
+    Exceptions:
+      throws java.lang.InterruptedException
+}
+SourceFile: "Main.java"
